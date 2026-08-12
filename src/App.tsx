@@ -8,7 +8,7 @@ import { Hero } from './components/Hero/Hero';
 import { Menu } from './components/Menu/Menu';
 import { Testimonials } from './components/Testimonials/Testimonials';
 
-const App = (): JSX.Element => {
+const App = () => {
   return (
     <>
       <Header />

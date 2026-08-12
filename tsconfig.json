@@ -17,6 +17,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "ignoreDeprecations": "6.0",
+    "types": ["vite/client", "react", "react-dom"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

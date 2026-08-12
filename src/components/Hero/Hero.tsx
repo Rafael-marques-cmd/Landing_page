@@ -2,11 +2,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { RESTAURANT_INFO, buildWhatsAppUrl } from '../../data/restaurant';
 import styles from './Hero.module.css';
 
-export const Hero = (): JSX.Element => {
-  const whatsappUrl = buildWhatsAppUrl(
-    RESTAURANT_INFO.whatsapp,
-    'tradicional Margherita',
-  );
+export const Hero = () => {
+  const whatsappUrl = buildWhatsAppUrl(RESTAURANT_INFO.whatsapp, 'tradicional Margherita');
 
   return (
     <section id="home" className={styles.hero}>
@@ -14,12 +11,18 @@ export const Hero = (): JSX.Element => {
       <div className={`container ${styles.content}`}>
         <p className={styles.kicker}>Desde 2009 · Forno a lenha</p>
         <h1 className={styles.title}>
-          Pizza <em>artesanal</em><br />
+          Pizza <em>artesanal</em>
+          <br />
           que alimenta a alma
         </h1>
         <p className={styles.subtitle}>{RESTAURANT_INFO.description}</p>
         <div className={styles.actions}>
-          <a href={whatsappUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <a
+            href={whatsappUrl}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaWhatsapp aria-hidden="true" size={20} />
             Pedir pelo WhatsApp
           </a>

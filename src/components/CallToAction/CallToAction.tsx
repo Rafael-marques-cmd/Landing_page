@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { RESTAURANT_INFO, buildWhatsAppUrl } from '../../data/restaurant';
 import styles from './CallToAction.module.css';
 
-export const CallToAction = (): JSX.Element => {
+export const CallToAction = () => {
   return (
     <section className={`section ${styles.cta}`} aria-labelledby="cta-title">
       <div className={`container ${styles.content}`}>

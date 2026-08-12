@@ -14,7 +14,7 @@ const FILTERS: Array<{ key: Filter; label: string }> = [
   { key: 'doce', label: 'Doces' },
 ];
 
-export const Menu = (): JSX.Element => {
+export const Menu = () => {
   const [activeFilter, setActiveFilter] = useState<Filter>('all');
 
   const filteredPizzas = useMemo(() => {

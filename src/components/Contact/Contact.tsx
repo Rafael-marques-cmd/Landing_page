@@ -2,7 +2,7 @@ import { FaClock, FaMapMarkerAlt, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { RESTAURANT_INFO } from '../../data/restaurant';
 import styles from './Contact.module.css';
 
-export const Contact = (): JSX.Element => {
+export const Contact = () => {
   const hoursEntries = Object.entries(RESTAURANT_INFO.hours);
 
   return (

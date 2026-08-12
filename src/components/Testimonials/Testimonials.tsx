@@ -2,7 +2,7 @@ import { FaStar } from 'react-icons/fa';
 import { TESTIMONIALS } from '../../data/restaurant';
 import styles from './Testimonials.module.css';
 
-export const Testimonials = (): JSX.Element => {
+export const Testimonials = () => {
   return (
     <section
       id="testimonials"

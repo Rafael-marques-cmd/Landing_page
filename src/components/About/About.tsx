@@ -9,7 +9,7 @@ const HIGHLIGHTS = [
   'Forno a lenha de tijolo refratário',
 ];
 
-export const About = (): JSX.Element => {
+export const About = () => {
   return (
     <section id="about" className={`section ${styles.about}`} aria-labelledby="about-title">
       <div className={`container ${styles.grid}`}>
@@ -33,8 +33,8 @@ export const About = (): JSX.Element => {
           <p className={styles.lead}>{RESTAURANT_INFO.description}</p>
           <p>
             Cada pizza que sai do nosso forno carrega a dedicação de uma equipe apaixonada. Do
-            pizzaiolo ao atendimento, trabalhamos para que cada mordida seja uma pequena viagem
-            à Itália.
+            pizzaiolo ao atendimento, trabalhamos para que cada mordida seja uma pequena viagem à
+            Itália.
           </p>
 
           <ul className={styles.list}>

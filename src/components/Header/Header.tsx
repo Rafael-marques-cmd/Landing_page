@@ -8,7 +8,7 @@ import styles from './Header.module.css';
 
 const SECTION_IDS = NAV_LINKS.map((link) => link.href.replace('#', ''));
 
-export const Header = (): JSX.Element => {
+export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');

@@ -11,7 +11,7 @@ const ICONS: Record<Feature['icon'], IconType> = {
   truck: FaTruck,
 };
 
-export const Features = (): JSX.Element => {
+export const Features = () => {
   return (
     <section className={`section ${styles.features}`} aria-labelledby="features-title">
       <div className="container">
