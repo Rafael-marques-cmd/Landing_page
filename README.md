@@ -1,18 +1,18 @@
-#  Forno di Napoli — Landing Page
+# Forno di Napoli — Landing Page
 
-Landing page de uma pizzaria artesanal, desenvolida com **React 18 + TypeScript** e **Vite**.
+Landing page de uma pizzaria artesanal, desenvolvida com **React 18 + TypeScript** e **Vite**.
 
-##  Funcionalidades
+## Funcionalidades
 
--  Layout responsivo (mobile-first)
--  Cardápio com filtro por categoria (Tradicionais / Especiais / Doces)
--  Integração direta com WhatsApp (mensagens pré-preenchidas por sabor)
--  Menu fixo com scroll spy (link ativo conforme a seção visível)
--  Acessibilidade (semântica HTML, ARIA labels, contraste, foco visível, `prefers-reduced-motion`)
--  Performance: imagens com `loading="lazy"`, código dividido
--  Tipagem forte em todo o código (strict mode)
+- Layout responsivo (mobile-first)
+- Cardápio com filtro por categoria (Tradicionais / Especiais / Doces)
+- Integração direta com WhatsApp (mensagens pré-preenchidas por sabor)
+- Menu fixo com scroll spy (link ativo conforme a seção visível)
+- Acessibilidade (semântica HTML, ARIA labels, contraste, foco visível, `prefers-reduced-motion`)
+- Performance: imagens com `loading="lazy"`, código dividido
+- Tipagem forte em todo o código (strict mode)
 
-##  Stack
+## Stack
 
 - **React 18** + **TypeScript 5** (modo strict)
 - **Vite 5** (build e dev server rápidos)
@@ -20,7 +20,7 @@ Landing page de uma pizzaria artesanal, desenvolida com **React 18 + TypeScript*
 - **react-icons** (ícones leves e tree-shakeable)
 - **ESLint** + **Prettier** (lint e formatação)
 
-##  Estrutura do projeto
+## Estrutura do projeto
 
 ```
 src/
@@ -43,7 +43,7 @@ src/
 └── index.css
 ```
 
-##  Como rodar
+## Como rodar
 
 ### Pré-requisitos
 - Node.js 18+ e npm (ou pnpm/yarn)
@@ -71,16 +71,19 @@ npm run lint      # roda o ESLint
 npm run format    # formata com Prettier
 ```
 
-##  Customização
+## Customização
 
-Todas as cores, fontes e espaçamentos são definidos em CSS Variables em [`src/index.css`](src/index.css).
+Todas as cores, fontes e espaçamentos são definidos em CSS Variables em [`src/index.css`](./src/index.css).
 Para alterar a identidade visual, basta ajustar essas variáveis.
 
 Os dados do restaurante, cardápio, horários, redes sociais e WhatsApp ficam em
-[`src/data/restaurant.ts`](src/data/restaurant.ts) — também funciona como ponto único para
+[`src/data/restaurant.ts`](./src/data/restaurant.ts) — também funciona como ponto único para
 i18n futura.
 
-##  Boas práticas aplicadas
+Os tipos de domínio do projeto ficam em
+[`src/types/domain.ts`](./src/types/domain.ts).
+
+## Boas práticas aplicadas
 
 - **Componentes funcionais** + hooks, sem classes
 - **CSS Modules** para escopo local de estilos
@@ -92,7 +95,6 @@ i18n futura.
 - **Strict mode** do TypeScript (`noUnusedLocals`, `noUnusedParameters`, etc.)
 - **`createRoot`** + `<StrictMode>` na entrada da aplicação
 
-## 📄 Licença
+## Licença
 
 MIT — use como quiser.
-
